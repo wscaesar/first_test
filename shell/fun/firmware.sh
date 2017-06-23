@@ -12,6 +12,13 @@ DIR1="./build/arch/arm/boot/"
 DIR2="./platform/rootfs/"
 DIR3="./firmware/$datelist"
 
+CheckDir()
+{
+	if [ ! -d "firmware" ]
+	then 
+	mkdir firmware
+	fi
+}
 
 BuildNewDirAndFile()
 {
@@ -40,6 +47,7 @@ InputFileDescription()
 	cat ${DIR3}/${filename}
 }
 
+CheckDir
 BuildNewDirAndFile
 ShowFileListAndCopyFile
 InputFileDescription
