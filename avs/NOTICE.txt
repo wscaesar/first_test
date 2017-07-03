@@ -1,0 +1,2 @@
+alexa-avs-sample-app
+版权所有2016 Amazon.com，Inc.或其附属公司。 版权所有。
